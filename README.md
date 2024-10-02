@@ -11,7 +11,8 @@ Accept the challenge for Web/API and provide the solution
    If the username is valid then your program should return the string true, otherwise return the string false.
 ```
 Solution:
-```function CodelandUsernameValidation(str) {
+```
+function CodelandUsernameValidation(str) {
   const regex = /^[a-zA-Z][a-zA-Z0-9_]*[^_]$/g
   return str.length >= 4 && str.length <= 25 && regex.test(str)
 }
