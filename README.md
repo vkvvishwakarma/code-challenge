@@ -21,3 +21,23 @@ function CodelandUsernameValidation(str) {
 // keep this function call here 
 console.log(CodelandUsernameValidation(readline()));
 ``` 
+
+#### 2. Have the function FindIntersection(strArr) read the array of strings stored in strArr which will contain 2 elements: the first element will represent a list of comma-separated numbers sorted in ascending order, the second element will represent a second list of comma-separated numbers (also sorted). Your goal is to return a comma-separated string containing the numbers that occur in elements of strArr in sorted order. If there is no intersection, return the string false.
+```
+function checkloop(str){
+    var newArr =[];
+    var elemStr1 = str[0].split(", ");
+    var strEle2 = str[1].split(", ");
+    for(let i=0 ; i< elemStr1.length; i++){
+        if(strEle2.includes(elemStr1[i])){
+            newArr.push(elemStr1[i])
+        }
+        console.log(elemStr1[i]);
+    }
+    if(newArr.length == 0){
+        return false;
+    }
+    return newArr.toString();
+}
+console.log(checkloop(["1, 2, 4, 12, 15", "2, 4, 12, 17, 19" ]));
+```
