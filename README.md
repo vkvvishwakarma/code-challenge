@@ -48,7 +48,8 @@ For example: if str is "BOB loves-coding" then your program should return the st
 ```
 function SnakeCase(str) { 
 var snakeString = str.replace(/[&\/\\#,+()$~%.'":*?<>{}\s\-]/g,'_');
-  return snakeString; 
+var snakeCase = snakeString.toLowerCase();
+  return snakeCase; 
 
 }
    
