@@ -102,4 +102,9 @@ function QuestionsMarks(str) {
             }
         }
     }
+ return result;
+}
+   
+// keep this function call here 
+QuestionsMarks(readline());
 ```
