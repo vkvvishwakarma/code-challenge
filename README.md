@@ -167,3 +167,36 @@ var matchstr = sen.match(reg);
 // keep this function call here 
 console.log(LongestWord(readline()));
 ```
+```
+Solution 2:
+function LongestWord(sen) { 
+  return sen.match(/w+/g).reduce((item, next) => item.length >= next.length ? item : next);  
+}
+   
+// keep this function call here 
+LongestWord(readline());
+```
+```
+solution 3:
+function LongestWord(sen) { 
+
+    // get individual words
+    var words = sen.match(/\w+/g);
+    
+    // set initial longest word
+    var longest = words[0];
+ 
+    // compare words to longest
+     for (var i=0; i<words.length; i++) {
+         if (words[i].length > longest.length) {
+             longest = words[i];
+         }
+     }  
+     
+    return longest; 
+         
+}
+   
+// keep this function call here 
+LongestWord(readline());
+```
