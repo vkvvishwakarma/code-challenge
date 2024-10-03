@@ -87,24 +87,38 @@ QuestionsMarks(readline());
 ```
 solution -2
 function QuestionsMarks(str) { 
-    var matches = str.match(/\d[\w\?]*?\d/g);
-    if (!matches) return false;
-    
-    var result = false;
-    
-    for (var match of matches) {
-        if (Number(match[0]) + Number(match[match.length - 1]) === 10) {
-            // count the numbers of ?'s in the substring between two numbers 
-            if (match.split('').filter(char => char === '?').length === 3) {
-                result = true;
-            } else {
-                return false;
-            }
+  var checkNum = /\d[\w\?]*?\d/g
+  var matches = str.match(checkNum);
+  console.log(matches);
+  if(!matches){
+    return false;
+  }
+  var result =false;
+  //if(checkNum.test(str)){
+      for (let matchStr of matches)
+      {
+        console.log("first match number =>"+ Number(matchStr[0]));
+        console.log("last match number =>"+ Number(matchStr[matchStr.length-1]));
+        console.log("Addition of both =>"+ Number(matchStr[matchStr.length-1])+Number(matchStr[0]));
+
+        if(Number(matchStr[0])+ Number(matchStr[matchStr.length-1]) == 10){
+          console.log("split in to array =>" +matchStr.split(''));
+
+          if(matchStr.split('').filter(char => char === '?').length ===3){
+            return true;
+          }
+          else{
+            return false;
+          }
         }
-    }
- return result;
+        
+      }
+ // }
+  // code goes here  
+  return result; 
+
 }
    
 // keep this function call here 
-QuestionsMarks(readline());
+console.log(QuestionsMarks(readline()));
 ```
