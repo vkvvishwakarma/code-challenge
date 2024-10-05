@@ -4,3 +4,5 @@
 1. cognitive: Paying attention to all the informationboth implicit and explicit that you are receiving from the other person comprehending and integrating that information
 2. emotional: staying calm and compassionate during the conversation.including managing any emotional reactions(annoyance, boredom you might experiance.
 3. behavioral: conveying intrest and comprehension verbally and nonverbally
+
+4. Active listening goal: making other person feel heard and understood. providing a safe space
