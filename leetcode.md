@@ -6,3 +6,8 @@
 3. behavioral: conveying intrest and comprehension verbally and nonverbally
 
 4. Active listening goal: making other person feel heard and understood. providing a safe space
+5. ```
+   No same
+   No judgement
+   No blame
+   ```
